@@ -1,0 +1,42 @@
+<div class="filter-container">
+    <div class="row1">
+        <div>
+            <table>
+                <tr class="left-align-text bold">
+                    Filters
+                </tr>
+                <tr class="center-align-text">
+                    Launch Years
+                </tr>
+                <tr class="list">
+                    <span class="button-conatiner" *ngFor="let items of years; let i = index">
+                    <td class="cell">
+                        <button class ="primary" (click)="updateList(items, 'year')"> {{items}}</button></td>
+                    </span>
+                </tr>
+                <tr class="center-align-text">
+                    Successfull Launch
+                </tr>
+                <tr class="list">
+                    <td class="cell-1">
+                        <button class="primary" (click)="updateList(true, 'launch')"> True</button>
+                    </td>
+                    <td class="cell-2">
+                        <button class="primary" (click)="updateList(false, 'launch')"> False</button>
+                    </td>
+                </tr>
+                <tr class="center-align-text">
+                    Successfull Landings
+                </tr>
+                <tr class="list">
+                    <td class="cell-1">
+                        <button class="primary" (click)="updateList(true , 'land')"> True</button>
+                    </td>
+                    <td class="cell-2">
+                        <button class="primary" (click)="updateList(false, 'land')"> False</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

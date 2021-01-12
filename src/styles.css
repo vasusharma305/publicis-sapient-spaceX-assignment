@@ -1,0 +1,52 @@
+body {
+    background: lightgray;
+}
+
+
+/* everywhere else */
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px 15px 15px 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+@media only screen and (min-width: 700px) {
+    /* For desktop: */
+    .col-6 {
+        width: 80%;
+    }
+    .col-3 {
+        width: 20%;
+    }
+}
+@media only screen and (min-width: 280px) {
+    /* For Mobile: */
+    .col-6 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 90%;
+    }
+}
+@media only screen and (min-device-width: 768px) {
+    .col-6 {
+        width: 80%;
+    }
+    .col-3 {
+        width: 20%;
+    }
+}

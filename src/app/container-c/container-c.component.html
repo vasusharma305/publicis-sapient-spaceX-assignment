@@ -1,0 +1,13 @@
+<div class="row">
+  <h2>SpaceX Launch Programs</h2>
+  <div class="col-3">
+    <app-filter (updateListEvent)="updateList($event)"></app-filter>
+  </div>
+  <div class="col-6 aside">
+    <app-dashboard [LaunchListUpdated]="LaunchList"></app-dashboard>
+  </div>
+  <div class="footer">
+    <div><b>Developed By: </b>Vasundra Sharma</div>
+    <div><b>Email: </b>vasundra305@gmail.com</div>
+  </div>
+</div>
